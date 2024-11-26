@@ -66,13 +66,11 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-## Observações
+## Notes
 
-- O painel administrativo pode ser acessado em: [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/).
-- Certifique-se de ativar o ambiente virtual ao executar comandos relacionados ao Django.
-- Acesse o projeto em: [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
+- The admin panel can be accessed at: [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/).
+- Make sure to activate the virtual environment when running Django-related commands.
+- Access the project at: [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
-## Note
-
-This project is still under development, and some features are not fully implemented yet. Updates will be made continuously.
+## This project is still under development, and some features are not fully implemented yet. Updates will be made continuously.
 
