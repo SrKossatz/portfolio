@@ -72,4 +72,7 @@ python manage.py runserver
 - Certifique-se de ativar o ambiente virtual ao executar comandos relacionados ao Django.
 - Acesse o projeto em: [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
+## Note
+
+This project is still under development, and some features are not fully implemented yet. Updates will be made continuously.
 
