@@ -7,23 +7,26 @@
     
     <!-- Load Static Files -->
     {% load static %}
+    <script src="{% static 'animation.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/carrousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/carroussel.css">
-    <link rel="stylesheet" href="portfolio/static/css/form.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    
 
 
 </head>
 <body class="bg-gray-900 text-white">
-    <!-- Header Section -->
+    <!-- Header Section with NAV -->
   <header class="bg-gray-800 p-4 shadow-md">
     <nav class="bg-[#1B2D3A] border-[#436779]">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="assets/avatar.webp" class="h-8 rounded-2xl" alt="Flowbite Logo" />
+          <img src="static/assets/avatar.webp" class="h-8 rounded-2xl" alt="Flowbite Logo" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap text-[#F5E6D3]">Kossatz DEV</span>
         </a>
         <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
@@ -74,25 +77,25 @@
         </div>
       </div>
     </nav>
-    </header>
+  </header>
 
-    <!-- Main Content -->
-    <main class="">
-        {% block content %}
-        <!-- Content will be injected here -->
-        {% endblock %}
-    </main>
 
-    <!-- Footer Section -->
-    <!-- Footer Section -->
-    <footer class="bg-gray-900 text-white py-4 px-6">
+  {% include "sections/hero_section.html" %} 
+  {% include "sections/about_section.html" %} 
+  {% include "sections/project_section.html" %} 
+  {% include "sections/contact_section.html" %}
+  
+  
+  
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-white py-4 px-6">
       <div class="text-center text-gray-400 text-sm">
           &copy; {{ date.year }} My Portfolio. <span class="font-bold dark:text-white">All rights reserved.</span>
       </div>
-    </footer>
+  </footer>
 
 
     <!-- Scripts -->
-    <script src="{% static 'portfolio/script.js' %}"></script>
+  <script src="{% static 'portfolio/script.js' %}"></script>
 </body>
 </html>
