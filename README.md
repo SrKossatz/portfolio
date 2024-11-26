@@ -1,29 +1,75 @@
-# **Portfólio Pessoal**
-
-Bem-vindo ao meu portfólio! Este repositório apresenta o código-fonte da minha página de portfólio pessoal, desenvolvida para destacar minha trajetória como programador back-end e meu conhecimento em desenvolvimento web.
-
+# **Personal Portfolio**
+Welcome to my portfolio! This repository presents the source code of my personal portfolio page, developed to highlight my journey as a programmer, and my knowledge in web development.
 ---
-
-## **✨ Sobre Mim**
-
-Sou um desenvolvedor fullstack com foco em back-end, apaixonado por tecnologia e soluções criativas. Tenho experiência no desenvolvimento de aplicações robustas e escaláveis, utilizando **Python** e **Django**, além de habilidades em **HTML**, **CSS**, **JavaScript** e **Tailwind CSS** para criar interfaces web funcionais e atraentes.
-
+## **✨ About Me**
+I am a fullstack developer focusing on back-end, passionate about technology and creative solutions. I have experience in developing robust and scalable applications using **Python** and **Django**, as well as skills in **HTML**, **CSS**, **JavaScript** and **Tailwind CSS** to create functional and attractive web interfaces.
 ---
-
-## **🌟 Tecnologias e Ferramentas**
-
-- **Linguagens:** Python, JavaScript
+## **🌟 Technologies and Tools**
+- **Languages:** Python, JavaScript
 - **Frameworks:** Django, Tailwind CSS
 - **Frontend:** HTML5, CSS3
-- **Outros:** Boas práticas de código, controle de versão com Git
-
+- **Others:** Code best practices, version control with Git
 ---
+## **📖 Portfolio Features**
+- Professional presentation focusing on:
+ - Technical skills and tools I master.
+ - Most relevant projects I've developed.
+ - Contact information and social media links.
+- Responsive design, optimized for mobile devices and desktops.
+- Elegant and minimalist interface, developed with **Tailwind CSS**.
 
-## **📖 Funcionalidades do Portfólio**
+This guide will help you set up and run the Portfolio CMS project locally.
 
-- Apresentação profissional com foco em:
-  - Habilidades técnicas e ferramentas que domino.
-  - Projetos mais relevantes que desenvolvi.
-  - Informações de contato e links para redes sociais.
-- Design responsivo, otimizado para dispositivos móveis e desktops.
-- Interface elegante e minimalista, desenvolvida com **Tailwind CSS**.
+## **Prerequisites**
+
+- Python 3.x
+- Django
+- Git
+- pip (Python package installer)
+
+## Installation Steps
+
+### 1. Clone the Repository
+
+```bash
+git clone
+https://github.com/SrKossatz/portfolio.git
+```
+### 2. Create and active the virtual environment
+
+- On windows
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+-MacOS and Linux
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Create a superuser
+
+```bash
+python manage.py createsuperuser
+```
+### 5. Run development server
+
+```bash
+python manage.py runserver
+```
+
+## Observações
+
+- O painel administrativo pode ser acessado em: [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/).
+- Certifique-se de ativar o ambiente virtual ao executar comandos relacionados ao Django.
+- Acesse o projeto em: [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
+
+
