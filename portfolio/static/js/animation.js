@@ -1,5 +1,4 @@
 
-
 // Suaviza navegação entre seções
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function (e) {
@@ -9,4 +8,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: "smooth",
         });
     });
+});
+
+
+var swiper = new Swiper(".mySwiper", {
+effect: "cube",
+grabCursor: true,
+cubeEffect: {
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 20,
+    shadowScale: 0.94,
+},
+pagination: {
+    el: ".swiper-pagination",
+},
 });
