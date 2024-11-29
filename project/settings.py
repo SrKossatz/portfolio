@@ -114,6 +114,29 @@ USE_I18N = True
 
 USE_TZ = True
 
+# settings.py
+
+# Ative o suporte à internacionalização
+USE_I18N = True
+USE_L10N = True
+USE_TZ = True
+
+# Idioma padrão
+LANGUAGE_CODE = 'en'
+
+# Ative múltiplos idiomas
+LANGUAGES = [
+    ('en', 'English'),
+    ('pt', 'Português'),
+    ('es', 'Español'),
+]
+
+# Caminho para os arquivos de tradução
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
+
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
