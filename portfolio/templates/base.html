@@ -12,6 +12,7 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/carroussel.css' %}">
     <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    <link rel="stylesheet" href="{% static 'css/button_top.css' %}">
     <link rel="stylesheet" href="{% static 'css/form.css' %}">
     
     <!-- Load Flowbite CSS and JS -->   
@@ -27,8 +28,8 @@
 </head>
 <body class="bg-gray-900 text-white">
     <!-- Header Section with NAV -->
-  <header class="bg-gray-800 p-4 shadow-md">
-    <nav class=" border-[#436779]">
+  <header id="back-to-top"  class="bg-gray-800 p-4 shadow-md">
+    <nav  class=" border-[#436779]">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="static/assets/avatar.webp" class="h-8 rounded-2xl" alt="Flowbite Logo" />
@@ -63,7 +64,7 @@
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
           <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-[#436779] rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
             <li>
-              <a href="#" class="block py-2 px-3 text-[#89B0C9] rounded md:bg-transparent md:p-0" aria-current="page">Home</a>
+              <a href="#hero-section" class="block py-2 px-3 text-[#89B0C9] rounded md:bg-transparent md:p-0" aria-current="page">Home</a>
             </li>
             <li>
               <a href="#about-section" class="block py-2 px-3 md:p-0 text-[#F5E6D3] rounded hover:bg-[#89B0C9] hover:bg-opacity-20 md:hover:bg-transparent md:hover:text-[#89B0C9]">About</a>
@@ -91,7 +92,7 @@
   {% include "sections/contact_section.html" %}
   
   
-  
+
   <!-- Footer Section -->
   <footer class="bg-gray-900 text-white py-4 px-6">
       <div class="text-center text-gray-400 text-sm">

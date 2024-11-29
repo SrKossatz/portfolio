@@ -1,0 +1,56 @@
+
+.button_top {
+  width: 50px;
+  height: 50px;
+  background-color: #1b4552;
+  border: 4px double #e9e9e9;
+  border-radius: 15px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem; /* Adicione margem superior se necessário */
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: #e9e9e9;
+}
+
+.button_top:hover {
+  width: 140px;
+  border-radius: 15px;
+  transition-duration: 0.3s;
+  background-color: #1b4552;
+  align-items: center;
+}
+
+.button_top:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.button_top::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  color: #e9e9e9;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.button_top:hover::before {
+  font-family: Garet;
+  font-size: 15px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
+}

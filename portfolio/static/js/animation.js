@@ -24,3 +24,7 @@ pagination: {
     el: ".swiper-pagination",
 },
 });
+
+
+
+
