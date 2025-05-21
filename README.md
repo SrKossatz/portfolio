@@ -2,7 +2,7 @@
 Welcome to my portfolio! This repository presents the source code of my personal portfolio page, developed to highlight my journey as a programmer, and my knowledge in web development.
 ---
 ## **✨ About Me**
-I am a fullstack developer focusing on back-end, passionate about technology and creative solutions. I have experience in developing robust and scalable applications using **Python** and **Django**, as well as skills in **HTML**, **CSS**, **JavaScript** and **Tailwind CSS** to create functional and attractive web interfaces.
+I am a fullstack developer focusing on back-end, passionate about technology and creative solutions. I have experience in developing robust and scalable applications using **Java**, **Python** and **Django**, as well as skills in **HTML**, **CSS**, **JavaScript** and **Tailwind CSS** to create functional and attractive web interfaces.
 ---
 ## **🌟 Technologies and Tools**
 - **Languages:** Python, JavaScript
